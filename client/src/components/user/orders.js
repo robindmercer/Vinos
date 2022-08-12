@@ -140,7 +140,7 @@ export default function UserOrders() {
       <div className="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between">
         <button
           className="bg-purple-400 px-20 py-5 text-sm shadow-sm font-semibold tracking-wider  text-purple-100 rounded-full hover:shadow-2xl hover:bg-purple-500"
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/Home")}
         >
           Página Principal
         </button>

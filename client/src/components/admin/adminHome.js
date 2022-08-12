@@ -29,7 +29,7 @@ function AdminHome() {
       <div className="flex justify-center mt-5">
         <button
           className="bg-violet-500 hover:bg-violet-700 text-white font-bold py-4 px-8 mt-2 rounded focus:outline-none focus:shadow-outline align-right"
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/Home")}
         >
           Página Principal
         </button>

@@ -10,7 +10,7 @@ export default function OrderDetail() {
   const location = useLocation();
   const { state } = location;
   const navigate = useNavigate()
-  var pagina = "/";
+  var pagina = "/Home";
 
   if (ReturnUserLoged() === "Admin") {
     pagina = "/admin/ventas";

@@ -108,7 +108,7 @@ export default function Contact() {
             </div>
             <a
               onClick={() => {
-                navigate("/");
+                navigate("/Home");
               }}
               href="#"
               className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-violet-500 hover:bg-indigo-700"

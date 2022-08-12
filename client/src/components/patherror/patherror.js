@@ -19,7 +19,7 @@ const Error = ({msj}) => {
         </h1>
 
         <button
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/Home")}
           className="w-full lg:w-auto my-4 border rounded-md px-1 sm:px-16 py-5 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50"
         >
           Go back to Homepage

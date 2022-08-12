@@ -344,7 +344,7 @@ export default function ShoppingCart() {
                   <a
                     href="#"
                     className="flex font-semibold text-indigo-600 text-sm mt-10"
-                    onClick={() => (window.location.href = "/")}
+                    onClick={() => (window.location.href = "/Home")}
                   >&nbsp;&nbsp;&nbsp;&nbsp;
                     <svg
                       className="fill-current mr-2 text-indigo-600 w-5"
@@ -457,7 +457,7 @@ export default function ShoppingCart() {
                     <a
                       href="#"
                       className="flex font-semibold text-indigo-600 text-sm mt-10"
-                      onClick={() => (window.location.href = "/")}
+                      onClick={() => (window.location.href = "/Home")}
                     >
                       <svg
                         className="fill-current mr-2 text-indigo-600 w-5"
@@ -531,13 +531,13 @@ export default function ShoppingCart() {
   } else {
     if (localShoppingCart) {
       if (localShoppingCart.length === 0){
-        window.location.href = "/"
+        window.location.href = "/Home"
       }
       return (
         <div>Cargando...</div>
         )
       } else {
-        window.location.href = "/"
+        window.location.href = "/Home"
       }
   }
 }

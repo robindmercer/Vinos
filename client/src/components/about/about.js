@@ -379,7 +379,7 @@ export default function About() {
 
           <button
             onClick={() => {
-              navigate("/");
+              navigate("/Home");
             }}
             className="flex mx-auto mt-20 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-900 rounded text-lg"
           >

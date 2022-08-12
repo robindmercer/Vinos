@@ -3,38 +3,38 @@ import React, { useEffect, useState } from "react";
 import DetailsComponent from "../components/productdetail/ProductDetail";
 import ShoppingCart from "../components/shoppingCart/shoppingCar";
 import ShoppingData from "../components/shoppingCart/shoppingData";
-
+import LoadingPage from "../components/Landing/Landing"
 import Home from "../pages/home";
-import AdminHome from "../pages/admin/adminHome";
-import ListProduct from "../pages/admin/listProduct";
-import ListCategory from "../pages/admin/listCategory";
-import ListProductor from "../pages/admin/listProductor";
-import ListLocation from "../pages/admin/listLocation";
-import Addvino from "../../src/pages/admin/addVino";
-import FormCategory from "../../src/pages/admin/formCategory";
-import FormLocation from "../../src/pages/admin/formLocation";
-import FormProductor from "../../src/pages/admin/formProductor";
-import AddvinoUpd from "../../src/pages/admin/addVinoUpd";
+import AdminHome from "../components/admin/adminHome";
+import ListProduct from "../components/admin/listProduct";
+import ListCategory from "../components/admin/listCategory";
+import ListProductor from "../components/admin/listProductor";
+import ListLocation from "../components/admin/listLocation";
+import Addvino from "../../src/components/admin/addVino";
+import FormCategory from "../../src/components/admin/formCategory";
+import FormLocation from "../../src/components/admin/formLocation";
+import FormProductor from "../../src/components/admin/formProductor";
+import AddvinoUpd from "../../src/components/admin/addVinoUpd";
 import Review from "../../src/components/review/review";
 import Profile from "../../src/components/profile/Profile.jsx";
 import Error from "../components/patherror/patherror";
-import OrderDetail from "../pages/user/orderDetail";
-import OrderDetailAdmin from "../pages/user/orderDetailAdmin";
+import OrderDetail from "../components/user/orderDetail";
+import OrderDetailAdmin from "../components/user/orderDetailAdmin";
 import Contact from "../components/footer/contact";
-import Ventas from "../../src/pages/admin/ventas";
-import Graficos from "../../src/pages/admin/graficos";
-import UserOrders from "../pages/user/orders";
-import DatosEnvio from "../pages/user/datosEnvio";
-import CompraRealizada from "../pages/user/CompraRealizada";
-import ListFavorites from "../pages/user/listFavorite.jsx";
+import Ventas from "../../src/components/admin/ventas";
+import Graficos from "../../src/components/admin/graficos";
+import UserOrders from "../components/user/orders";
+import DatosEnvio from "../components/user/datosEnvio";
+import CompraRealizada from "../components/user/CompraRealizada";
+import ListFavorites from "../components/user/listFavorite.jsx";
 import About from "../components/about/about";
-import GestionUsuarios from "../pages/admin/gestionUsuarios";
+import GestionUsuarios from "../components/admin/gestionUsuarios";
 import { useAuth0 } from "@auth0/auth0-react";
 import VerifyUserRoles from "./verifyUserRoles";
 import { getUserById } from "../actions/action";
 import { useDispatch } from "react-redux";
 
-//import ListDescuentos from "../pages/admin/listDescuentos";
+//import ListDescuentos from "../components/admin/listDescuentos";
 const msj = "Ud. debe tener ser administrador para acceder a esta página";
 
 
@@ -59,7 +59,7 @@ function HandleRoutes() {
   const routes = [
     {
       path: "/",
-      element: <Home />,
+      element: <LoadingPage />,
       exact: true,
       private: false,
     },
